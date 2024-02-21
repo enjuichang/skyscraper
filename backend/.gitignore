@@ -1,0 +1,27 @@
+# Ignore Python virtual environment
+venv/
+
+# Ignore environment configuration
+.env
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.env/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# PyInstaller
+*.exe
+*.spec
+
+# Temporary files
+*.swp
+*~
