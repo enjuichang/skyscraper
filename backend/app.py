@@ -7,5 +7,9 @@ def get_data():
     data = {'message': 'Hello from Flask!'}
     return jsonify(data)
 
+@app.route('/')
+def health():
+    return "hi"
+
 if __name__ == '__main__':
     app.run(debug=True)

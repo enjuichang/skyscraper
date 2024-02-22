@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
+import FetchData from './fetch_data';
 
 const ScrollamaDemo = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
@@ -13,7 +14,7 @@ const ScrollamaDemo = () => {
   return (
     <div class='flex flex-col w-full h-full space-y-16 my-36 justify-center'>
       <div class='w-auto h-20 m-12 sticky top-4 border border-orchid'>
-        I'm sticky. The current triggered step index is: {currentStepIndex}
+        <FetchData />
       </div>
       <div class="flex justify-center w-full h-auto">
         <div class='flex justify-center m-4 w-auto h-20 sticky top-1/2 border border-orchid space-x-6'>
