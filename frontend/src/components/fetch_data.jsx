@@ -10,7 +10,7 @@ function FetchData() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('/api/data');
+      const response = await fetch('https://flask-be-e2f829a47d3c.herokuapp.com/api/data');
       const responseData = await response.json();
       setData(responseData);
     } catch (error) {
@@ -20,10 +20,10 @@ function FetchData() {
 
   return (
     <div>
-      <header>
         <h1>Welcome to My App</h1>
+        <div clas="text-white">
         {data && <p>{data.message}</p>}
-      </header>
+        </div>
     </div>
   );
 }
