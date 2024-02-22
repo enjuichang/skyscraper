@@ -18,10 +18,6 @@ run:
 	@echo "Starting Docker containers..."
 	docker-compose -f docker-compose.yml up
 
-run.static:
-	@echo "Starting Docker containers..."
-	docker-compose -f docker-compose.yml up react-frontend
-
 stop:
 	@echo "Stopping Docker containers..."
 	docker-compose down
@@ -29,5 +25,3 @@ stop:
 clean:
 	@echo "Cleaning up Docker containers and images..."
 	docker-compose down --rmi all -v --remove-orphans
-
-static: build-frontend run.static
